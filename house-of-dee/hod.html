@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="hod.css">
+  </head>
+  <body>
+    <h1 id="title">House of Dee Survey Form</h1>
+    <p id="description">This is a survey form to know what customers expect from House of Dee.</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Full Name: <input id="name" type="text" placeholder="Enter your full name" required></label>
+      <label id="email-label" for="email">Email: <input id="email" placeholder="Enter your email" type="email" required></label>
+      <label id="number-label" for="number">Age: <input id="number" type="number" min="13" max="50" placeholder="Age"></label>
+      <label for="dropdown">What is your gender?
+        <select id="dropdown">
+          <option value="option1">Female</option>
+          <option value="optionn2">Male</option>
+        </select> 
+      </label>
+      <legend>Would you like to see more inclusions from House of Dee?</legend>
+      <label for="definitely"><input id="definitely" name="choice" type="radio" value="definitely" class="inline">Definitely</label>
+      <label for="no"><input id="no" name="choice" type="radio" value="no" class="inline">No</label>
+      <label for="maybe"><input id="maybe" name="choice" type="radio" value="maybe" class="inline">Maybe</label>
+      <br>
+      <label for="inclusions">What inclusions would you like to see?
+        <br>
+        <input type="checkbox" name="item" value="tops" class="inline"> Basic Tops
+        <br>
+        <input type="checkbox" name="item" value="tees" class="inline"> Tees
+        <br>
+        <input type="checkbox" name="item" value="skirts" class="inline"> Skirts
+        <br>
+        <input type="checkbox" name="item" value="joggers" class="inline"> Joggers
+        <br>
+        <input type="checkbox" name="item" value="jeans" class="inline"> Jeans
+        <br>
+        <input type="checkbox" name="item" value="shirts" class="inline"> Shirts
+        <br>
+        <input type="checkbox" name="item" value="jewelry" class="inline"> Jewelry
+        <br>
+        <input type="checkbox" name="item" value="beauty" class="inline"> Selfcare & Beauty Items
+        <br>
+        <input type="checkbox" name="item" id="accessories" class="inline" value="accessories"> Accessories
+      </label>
+      <br>
+      <label for="feedback">Additional input:
+          <textarea id="bio" name="bio" rows="4" cols="50" placeholder="I would like to see..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
